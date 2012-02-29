@@ -1,8 +1,16 @@
 [user]
-name = Jui-Nan Lin
-email = jnlinn@gmail.com
+	name = Jui-Nan Lin
+	email = jnlinn@gmail.com
+[core]
+	excludesfile = /Users/mbp2966/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [color]
-ui = auto
+	ui = auto
 [alias]
 	ci = commit
 	co = checkout
